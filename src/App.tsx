@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <div>
         <Navbar />
-        <div>
+        <div className="d-flex">
           <Sidebar />
           <Home />
         </div>
