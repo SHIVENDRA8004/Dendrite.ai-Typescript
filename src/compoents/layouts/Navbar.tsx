@@ -10,7 +10,7 @@ const Navbar = () => {
         <PlayCircleOutlined />
       </div>
       <div
-        className="border border-2 border-secondary d-flex justify-content-center align-items-center ms-5 me-auto rounded fs-8"
+        className="border border-2 border-secondary d-flex justify-content-center align-items-center ms-4 me-auto rounded fs-8"
         style={{ height: "45%", aspectRatio: "1/1" }}
       >
         <LeftOutlined />
