@@ -18,7 +18,7 @@ const Navbar = () => {
         <div className="input-group me-5">
           <input type="text" className="form-control" placeholder="What you wish?" />
           <button className="btn btn-outline-secondary" type="button" id="search-btn">
-            <i className="bi bi-search "></i>
+            <i className="bi bi-search bg-transparent "></i>
           </button>
         </div>
         <i className="bi bi-bell ms-5 me-4 fs-5"></i>
