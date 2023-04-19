@@ -9,8 +9,12 @@ function App() {
       <div>
         <Navbar />
         <div className="d-flex">
-          <Sidebar />
-          <Home />
+          <div>
+            <Sidebar />
+          </div>
+          <div>
+            <Home />
+          </div>
         </div>
         <MusicGrid />
       </div>
