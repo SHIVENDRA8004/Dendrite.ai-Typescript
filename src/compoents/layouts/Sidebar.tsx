@@ -2,19 +2,19 @@ import { useState } from "react";
 const Sidebar = () => {
   const [active, setActive] = useState(["bg-warning", "", "", "", ""]);
   const HandleClick = (a: number) => {
-    if (a === 1) {
+    if (a === 0) {
       setActive(["bg-warning", "", "", "", ""]);
     }
-    if (a === 2) {
+    if (a === 1) {
       setActive(["", "bg-warning", "", "", ""]);
     }
-    if (a === 3) {
+    if (a === 2) {
       setActive(["", "", "bg-warning", "", ""]);
     }
-    if (a === 4) {
+    if (a === 3) {
       setActive(["", "", "", "bg-warning", ""]);
     }
-    if (a === 5) {
+    if (a === 4) {
       setActive(["", "", "", "", "bg-warning"]);
     }
   };
@@ -27,7 +27,7 @@ const Sidebar = () => {
               className={` mu-2 mb-1 p-2 ps-4 rounded-pill ${active[0]}`}
               id="1"
               onClick={() => {
-                HandleClick(1);
+                HandleClick(0);
               }}
             >
               <i className="bi bi-house me-3 bg-transparent"></i>
@@ -39,7 +39,7 @@ const Sidebar = () => {
               className={` mu-2 mb-1 p-2 ps-4 rounded-pill ${active[1]}`}
               id="2"
               onClick={() => {
-                HandleClick(2);
+                HandleClick(1);
               }}
             >
               <i className="bi bi-search-heart me-3 bg-transparent"></i>
@@ -51,7 +51,7 @@ const Sidebar = () => {
               className={` mu-2 mb-1 p-2 ps-4 rounded-pill ${active[2]}`}
               id="3"
               onClick={() => {
-                HandleClick(3);
+                HandleClick(2);
               }}
             >
               <i className="bi bi-music-note-list me-3 bg-transparent"></i>
@@ -63,7 +63,7 @@ const Sidebar = () => {
               className={` mu-2 mb-1 p-2 ps-4 rounded-pill ${active[3]}`}
               id="4"
               onClick={() => {
-                HandleClick(4);
+                HandleClick(3);
               }}
             >
               <i className="bi bi-heart me-3 bg-transparent"></i>
@@ -75,7 +75,7 @@ const Sidebar = () => {
               className={` mu-2 mb-1 p-2 ps-4 rounded-pill ${active[4]}`}
               id="5"
               onClick={() => {
-                HandleClick(5);
+                HandleClick(4);
               }}
             >
               <i className="bi bi-gear me-3 bg-transparent "></i>
