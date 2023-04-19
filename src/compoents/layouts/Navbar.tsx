@@ -1,4 +1,3 @@
-import { PlayCircleOutlined, LeftOutlined, BellOutlined, UserOutlined, SearchOutlined } from "@ant-design/icons";
 const Navbar = () => {
   return (
     <div className="d-flex align-items-center border-bottom border-2 border-secondary p-0 " style={{ height: "8vh" }}>
@@ -7,25 +6,23 @@ const Navbar = () => {
         style={{ height: "100%", width: "300px" }}
       >
         <div className="me-2 fw-bold">MUSIC PLAYER</div>
-        <PlayCircleOutlined />
+        <i className="bi bi-soundwave"></i>
       </div>
       <div
-        className="border border-2 border-secondary d-flex justify-content-center align-items-center ms-4 me-auto rounded fs-8"
-        style={{ height: "45%", aspectRatio: "1/1" }}
+        className=" d-flex justify-content-center align-items-center ms-4 me-auto"
+        style={{ height: "50%", aspectRatio: "1/1" }}
       >
-        <LeftOutlined />
+        <i className="bi bi-arrow-left-short fs-5 border border-2 border-secondary rounded"></i>
       </div>
       <div className="d-flex align-items-center me-4 " style={{ height: "100%" }}>
-        <div className="input-group ">
+        <div className="input-group me-5">
           <input type="text" className="form-control" placeholder="What you wish?" />
           <button className="btn btn-outline-secondary" type="button" id="search-btn">
-            <SearchOutlined className="fs-5" />
+            <i className="bi bi-search "></i>
           </button>
         </div>
-        <BellOutlined className=" ms-4 me-1" />
-        <div className="d-flex align-items-center border border-secondary border-2 ms-4 p-2 rounded-circle">
-          <UserOutlined />
-        </div>
+        <i className="bi bi-bell ms-5 me-4 fs-5"></i>
+        <i className="bi bi-person-circle fs-2"></i>
       </div>
     </div>
   );

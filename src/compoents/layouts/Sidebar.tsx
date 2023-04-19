@@ -1,4 +1,3 @@
-import { HomeOutlined, SearchOutlined, HeartOutlined, UnorderedListOutlined } from "@ant-design/icons";
 const Sidebar = () => {
   return (
     <div className="border-bottom border-end border-secondary border-2" style={{ width: "300px", height: "650px" }}>
@@ -22,11 +21,11 @@ const Sidebar = () => {
         <ul className="nav nav-pills flex-column mb-auto">
           <li className="nav-item">
             <div>
-              <HomeOutlined />
+              {/* <HomeOutlined /> */}
               Home
             </div>
             <div>
-              <SearchOutlined />
+              {/* <SearchOutlined /> */}
               Search
             </div>
             <div>
@@ -34,7 +33,7 @@ const Sidebar = () => {
               Playlists
             </div>
             <div>
-              <HeartOutlined />
+              {/* <HeartOutlined /> */}
               Favourites
             </div>
           </li>
