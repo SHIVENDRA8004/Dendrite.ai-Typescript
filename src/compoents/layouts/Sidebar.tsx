@@ -25,7 +25,8 @@ const Sidebar = () => {
         <ul className="nav nav-pills flex-column ">
           <li className="nav-item">
             <div
-              className={` mu-2 mb-1 p-2 ps-4 rounded-pill ${active[0]}`}
+              className={` mu-2 mb-1 p-2 ps-4 rounded-pill ${active[0]} `}
+              style={{ cursor: "pointer" }}
               id="1"
               onClick={() => {
                 HandleClick(0);
