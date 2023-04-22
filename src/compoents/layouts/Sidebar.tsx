@@ -2,6 +2,7 @@ import { useState } from "react";
 const Sidebar = () => {
   const [active, setActive] = useState(["bg-warning", "", "", "", ""]);
   const HandleClick = (a: number) => {
+    // setActive(active[a]) = "bg-warning";
     if (a === 0) {
       setActive(["bg-warning", "", "", "", ""]);
     }
