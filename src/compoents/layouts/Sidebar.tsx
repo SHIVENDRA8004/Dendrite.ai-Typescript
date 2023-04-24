@@ -2,7 +2,6 @@ import { useState } from "react";
 const Sidebar = () => {
   const [active, setActive] = useState(["bg-warning", "", "", "", ""]);
   const HandleClick = (a: number) => {
-    // setActive(active[a]) = "bg-warning";
     if (a === 0) {
       setActive(["bg-warning", "", "", "", ""]);
     }
@@ -21,7 +20,7 @@ const Sidebar = () => {
   };
   return (
     <div className="border-bottom border-end border-secondary border-2" style={{ width: "300px", height: "650px" }}>
-      <div className="border-bottom border-secondary border-2 p-3">
+      <div className="border-bottom border-secondary border-2 p-3 " style={{ height: "240px" }}>
         <ul className="nav nav-pills flex-column ">
           <li className="nav-item">
             <div
@@ -85,6 +84,12 @@ const Sidebar = () => {
             </div>
           </li>
         </ul>
+      </div>
+      <div className="d-flex align-items-bottom justify-content-center p-3 " style={{ height: "410px" }}>
+        <div className="w-100 ">
+          <i className="bi bi-box-arrow-in-right me-3 bg-transparent"></i>
+          <div>Login</div>
+        </div>
       </div>
     </div>
   );

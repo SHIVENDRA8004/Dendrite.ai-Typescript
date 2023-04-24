@@ -6,3 +6,11 @@
   background-color: #171717;
   color: #ffffff;
 }
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-pad {
+  padding: 5px 20px 5px 20px !important;
+}
